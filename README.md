@@ -9,7 +9,7 @@ Após resolver a questão da base, execute pela IDE 'run as > Java Application' 
 Ou, via maven, gere um jar executável com toda a estrutura necessária -> entrando na pasta do projeto e via console executando 'mvn clean install'. 
 Após isso, rode a app usando 'java -jar restApiGastosSantander-0.0.1.jar'
 
-- Validando as funcionalidades da app.
+- Validando acesso via spring security.
 
 A aplicação esta protegida com spring security, sendo que sua validação é via token.
 Obtenha o token acessando via POST localhost:9090/login e passando no body do request: 
@@ -17,12 +17,19 @@ Obtenha o token acessando via POST localhost:9090/login e passando no body do re
 	"username":"admin",
 	"password":"password"
 }
+Esse acesso pode ser via curl, ou qualquer app para requisições (Ex soap-ui / postMan).
 
 A autenticação de credenciais esta sendo feita in Memory, sendo possível integrar via banco de dados.
 No header do response, virá o token que iremos usar nas demais requisições, exemplo:.
 
 Authorization →Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA
 
+- testando funcionalidades do exercício.
+
+Para todas as demais requisições, sempre enviar o token recebido no header através da chave "Authorization".
+Ex:.
+Content-Type 	application/json . 
+Authorization 	eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA .
 
 Funcionalidade Obrigatória: Listagem de gastos.
 	Falta filtrar listagem de gastos para 5 segundos atrás.
