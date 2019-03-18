@@ -28,7 +28,7 @@ No header do response, virá o token que iremos usar nas demais requisições, e
 
 - ##testando funcionalidades do exercício.
 
-** Para todas as demais requisições, sempre enviar o token recebido no header através da chave "Authorization". **
+**Para todas as demais requisições, sempre enviar o token recebido no header através da chave "Authorization".**
 Exemplo:.
 
 > Content-Type = application/json 
