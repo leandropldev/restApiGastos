@@ -22,16 +22,16 @@ Esse acesso pode ser via curl, ou qualquer app para requisições (Ex soap-ui / 
 A autenticação de credenciais esta sendo feita in Memory, sendo possível integrar via banco de dados.
 No header do response, virá o token que iremos usar nas demais requisições, exemplo:.
 
-Authorization →Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA
+> Authorization →Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA
 
 - testando funcionalidades do exercício.
 
 Para todas as demais requisições, sempre enviar o token recebido no header através da chave "Authorization".
 Exemplo:.
 
-Content-Type 	application/json .
+> Content-Type 	application/json .
  
-Authorization 	eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA .
+> Authorization 	eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA .
 
 
 
