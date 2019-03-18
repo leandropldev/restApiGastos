@@ -12,11 +12,13 @@ Após isso, rode a app usando 'java -jar restApiGastosSantander-0.0.1.jar'
 - Validando acesso via spring security.
 
 A aplicação esta protegida com spring security, sendo que sua validação é via token.
-Obtenha o token acessando via POST localhost:9090/login e passando no body do request: 
+Obtenha o token acessando via POST **localhost:9090/login** e passando no body do request: 
+```
 {
 	"username":"admin",
 	"password":"password"
 }
+```
 Esse acesso pode ser via curl, ou qualquer app para requisições (Ex soap-ui / postMan).
 
 A autenticação de credenciais esta sendo feita in Memory, sendo possível integrar via banco de dados.
@@ -29,9 +31,9 @@ No header do response, virá o token que iremos usar nas demais requisições, e
 Para todas as demais requisições, sempre enviar o token recebido no header através da chave "Authorization".
 Exemplo:.
 
-> Content-Type 	application/json .
+> Content-Type 	application/json 
  
-> Authorization 	eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA .
+> Authorization 	eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA 
 
 
 
