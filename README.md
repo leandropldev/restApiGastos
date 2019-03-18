@@ -35,15 +35,15 @@ Authorization 	eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.
 
 
 
-##Funcionalidade Obrigatória: Listagem de gastos.##
+##### Funcionalidade Obrigatória: Listagem de gastos.
 	Falta filtrar listagem de gastos para 5 segundos atrás.
 	
-Funcionalidade Eletiva: Filtro de gastos.
+##### Funcionalidade Eletiva: Filtro de gastos.
 	Falta filtrar listagem pela data informada.
 	
-Funcionalidade Eletiva: Categorização de gastos - FEITO.
+##### Funcionalidade Eletiva: Categorização de gastos - FEITO.
 
-Funcionalidade Eletiva: Sugestão de categoria - FEITO.
+##### Funcionalidade Eletiva: Sugestão de categoria - FEITO.
 	Por se tratar de uma api REST, foi mapeado um retorno com uma lista de categoria, cabe ao front end tratar essa lista e colocar no evento 'onChange' do usuário.
 	
-Funcionalidade Eletiva: Categorização automatica de gasto - FEITO.
+##### Funcionalidade Eletiva: Categorização automatica de gasto - FEITO.
