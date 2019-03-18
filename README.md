@@ -5,6 +5,8 @@
 Antes de rodar a aplicação é necessário criar uma base MySql onde os gastos serão persistidos.
 As informações de acesso a base de dados se encontram no application.properties, então baixe a aplicação, importe em sua IDE e ajuste a base e schema de acordo com as informações lá contidas ou você pode editar o application.properties para atender a uma eventual base já criada em sua máquina.
 
+> create database testSantander
+
 Após resolver a questão da base, execute pela IDE 'run as > Java Application' na classe 'JwtmeApplication.java'.
 Ou, via maven, gere um jar executável com toda a estrutura necessária -> entrando na pasta do projeto e via console executando 'mvn clean install'. 
 Após isso, rode a app usando 'java -jar restApiGastosSantander-0.0.1.jar'
