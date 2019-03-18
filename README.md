@@ -19,7 +19,9 @@ Obtenha o token acessando via POST localhost:9090/login e passando no body do re
 }
 
 A autenticação de credenciais esta sendo feita in Memory, sendo possível integrar via banco de dados.
+No header do response, virá o token que iremos usar nas demais requisições, exemplo:.
 
+Authorization →Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA
 
 
 Funcionalidade Obrigatória: Listagem de gastos.
