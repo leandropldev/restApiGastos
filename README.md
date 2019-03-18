@@ -9,7 +9,7 @@ Após resolver a questão da base, execute pela IDE 'run as > Java Application' 
 Ou, via maven, gere um jar executável com toda a estrutura necessária -> entrando na pasta do projeto e via console executando 'mvn clean install'. 
 Após isso, rode a app usando 'java -jar restApiGastosSantander-0.0.1.jar'
 
-- Validando acesso via spring security.
+- ## Validando acesso via spring security.
 
 A aplicação esta protegida com spring security, sendo que sua validação é via token.
 Obtenha o token acessando via POST **localhost:9090/login** e passando no body do request: 
