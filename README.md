@@ -62,16 +62,15 @@ Exemplo:.
 	
 ##### Funcionalidade Eletiva: Categorização automatica de gasto - FEITO.
 	Ao cadastrar uma nova regra, a aplicação filtra um gasto com a mesma descrição do gasto informado, caso exista um registro igual, então a categoria será atualizada.
-	> url de acesso: localhost:9090/registraGastos
-	body:
-	```
+	> url de acesso: POST localhost:9090/registraGastos
+	body do request:
+	
 	{
-	    "id": 2,
 	    "descricao": "depositoBancario",
 	    "valor": 10.2,
 	    "codigousuario": 1,
 	    "data": "18/03/2019",
 	    "categoria": ""
 	}
-	```
+	
 	retorno esperado: o gasto cadastrado em JSON com a categoria já atualizada.
