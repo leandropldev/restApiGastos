@@ -27,11 +27,15 @@ Authorization →Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc
 - testando funcionalidades do exercício.
 
 Para todas as demais requisições, sempre enviar o token recebido no header através da chave "Authorization".
-Ex:.
-Content-Type 	application/json . 
+Exemplo:.
+
+Content-Type 	application/json .
+ 
 Authorization 	eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Mzc4OTg5MH0.vn6YKLPewrHOr0xwIGxexMAhDEOJ_rdHQ4po7P-VJmx14XJOdBUzdz8DXXyPvHJam5GQbKT4qoDFkL7BYje0kA .
 
-Funcionalidade Obrigatória: Listagem de gastos.
+
+
+##Funcionalidade Obrigatória: Listagem de gastos.##
 	Falta filtrar listagem de gastos para 5 segundos atrás.
 	
 Funcionalidade Eletiva: Filtro de gastos.
