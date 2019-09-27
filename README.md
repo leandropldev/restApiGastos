@@ -1,4 +1,3 @@
-# testeSantander
 
 - ## instruções para gerar e rodar a app:
 
